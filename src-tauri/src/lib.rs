@@ -17,7 +17,7 @@ pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_opener::init())
         .manage(AppState{
-            todo_mgr: Mutex::new(TodoMgr::new()),
+            todo_mgr: Mutex::new(TodoMgr::load()),
         })
         .invoke_handler(tauri::generate_handler![
             greet,
