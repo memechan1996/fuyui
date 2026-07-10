@@ -1,8 +1,8 @@
-mod todoMgr;
-mod appState;
+mod todo_mgr;
+mod app_state;
 
-use crate::appState::AppState;
-use crate::todoMgr::TodoMgr;
+use crate::app_state::AppState;
+use crate::todo_mgr::TodoMgr;
 
 use std::sync::{Mutex};
 
